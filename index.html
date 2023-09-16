@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css" >
+
+    <!--  Box Icons  -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&family=Mukta:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-container">
+        <div class="teperature-converter-container">
+            <h2>Temperature Converter</h2>
+            <!-- input field -->
+            <div class="degrees-types">
+                <!-- for degrees-->
+                <div class="degree-field">
+                    <label for="degree">Degrees</label>
+                    <input type="number" id="degree" name="degree" />
+                </div>
+
+                <!-- for option selection-->
+                <div class="temperature-field">
+                    <label for="temperature-type">Type</label>
+                    <select name="temperatures" id="temperature-type" autocomplete="on">
+                        <option value="fahrenheit" id="fahrenheit"> Fahrenheit </option>
+                        <option value="kelvin" id="kelvin"> Kelvin </option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="convert-button">Convert</button>
+            </div>
+            <hr />
+            <div class="result">
+                <h2 class="result-heading"> Result (Celsius)</h2>
+                <h1 class="celsius-result" id="celsius">1</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.bg-container {
+    background-image: url("https://res.cloudinary.com/drmf7ywbu/image/upload/v1694166648/27724358_7332021_mp7mi2.jpg");
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teperature-converter-container {
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.teperature-converter-container h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.degrees-types {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.degree-field {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 450;
+}
+
+input {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 35px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding-left: 10px;
+}
+
+select {
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    padding-left: 10px;
+}
+
+.temperature-field {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+}
+
+button {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    background: linear-gradient(to bottom, #3633f3, #120fb9);
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all .3s ease-in;
+}
+button:hover {
+    background: linear-gradient(to bottom, #4a47e7, #322fda);
+}
+
+hr {
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.fa {
+    margin-left: -12px;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 576px) {
+    .teperature-converter-container{
+        padding: 15px;
+    }
+    .teperature-converter-container h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .degrees-types{
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .degree-field {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 20px;
+    }
+    label {
+        font-size: 18px;
+    }
+    input {
+        border: 1px solid white;
+        background-color: transparent;
+        border-radius: 10px;
+        height: 30px;
+        outline: none;
+        font-size: 14px;
+        font-weight: 550;
+        color: white;
+        padding-left: 8px;
+    }
+    select {
+        height: 30px;
+        font-size: 14px;
+        font-weight: 550;
+    }
+    button {
+        height: 35px;
+        font-size: 18px;
+    }
+    hr {
+        border: 1px solid white;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        text-align: center;
+        color: black;
+        font-size: 24px;
+    }
+}
